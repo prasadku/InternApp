@@ -1,0 +1,14 @@
+<div fxLayoutAlign="center center" fxFlexFill >
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary" id="s">Delete By ID</mat-toolbar>
+    <form fxLayoutAlign="strech" fxLayout="column" >
+      <mat-form-field>
+        <input matInput #tobe placeholder="EnterId"  name="id" >
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" (click)="deleteData(tobe.value)"  >Delete</button>
+      <button mat-raised-button type="submit" (click)="goBack()"  >Back</button>
+    </form>
+  </mat-card>
+
+</div>

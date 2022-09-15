@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {UserDataService} from "./services/user-data.service";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  users:any;
   title = 'StudentDataBase';
+  constructor() {
+  }
+
 }

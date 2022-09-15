@@ -1,0 +1,62 @@
+<div fxLayoutAlign="center " fxFlexFill >
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary" id="s">Update Values</mat-toolbar>
+    <div fxLayout="column">
+      <span><mat-form-field>
+        <input #deta matInput placeholder="Enter Id">
+      </mat-form-field></span>
+      <span>
+        <button mat-raised-button color="primary"  (click)="getData(deta.value)"> Search  </button>
+      </span>
+
+    </div>
+    <form [formGroup]="updateForm"  #userForm="ngForm" fxLayoutAlign="strech" fxLayout="column" (ngSubmit)="onSubmit(userForm.value)">
+
+
+      <mat-form-field>
+        <input matInput placeholder="Update Name" name="name" formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Update gender" name="gender"  formControlName="gender">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Update Address" name="address" formControlName="address"  >
+      </mat-form-field>
+      <mat-form-field>
+        <input  matInput placeholder="Update DOB" name="dateOfBirth" formControlName="dateOfBirth" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput name="ids" formControlName="id" >
+      </mat-form-field>
+      <!--<mat-form-field>
+        <input matInput placeholder="Location" name="location" [ngModel] ="userData[0].location">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Location" name="dateofbirth" [ngModel] ="userData[0].dateofbirth">
+      </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Branch" name="branch" [ngModel]="userData[0].branch">
+        </mat-form-field>-->
+      <!--   <mat-form-field>
+          <input matInput placeholder="Div" name="div" [ngModel]="userData[0].div"  >
+        </mat-form-field>-->
+      <!-- <mat-form-field>
+         <input matInput placeholder="RollNo" name="rollno" [ngModel]="userData[0].rollno">
+       </mat-form-field>-->
+       <div>
+         <button mat-raised-button type="submit" (click)="updated()" color="primary"> Submit</button>
+       </div>
+       <div id="spac"  >
+
+       </div>
+       <div>
+          <span>
+         <button mat-raised-button color="primary" (click)="goBack()"> Back</button>
+       </span>
+       </div>
+
+     </form>
+   </mat-card>
+
+ </div>

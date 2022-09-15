@@ -1,0 +1,48 @@
+
+<div fxLayoutAlign="center " fxFlexFill >
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary" id="s">Search By ID</mat-toolbar>
+    <div>
+      <span><mat-form-field>
+        <input matInput placeholder="Enter Id" #IDVAL >
+      </mat-form-field></span>
+      <span>
+        <button mat-raised-button color="primary" (click)="searchById(IDVAL.value)" > Search  </button>
+      </span>
+
+    </div>
+    <div>
+      <h3> <span>Name:</span>
+        <span>{{userData.name}}</span></h3>
+
+    </div>
+    <div>
+      <h3> <span>Gender:</span>
+        <span>{{userData.gender}}</span></h3>
+
+    </div>
+
+
+    <div>
+      <h3> <span>DOB:</span>
+        <span>{{userData.dateofbirth}}</span></h3>
+
+    </div>
+
+    <div>
+      <h3> <span>Location:</span>
+        <span>{{userData.address}}</span></h3>
+
+    </div>
+
+  <!--  <div><h3> <span>Div:</span>
+      <span>{{userData.name}}</span></h3></div>
+
+    <div><h3> <span>RollNo:</span>
+      <span>{{userData.name}}</span></h3></div>-->
+    <div> <button mat-raised-button color="primary" (click)="goTOHome()" > Back  </button></div>
+
+
+  </mat-card>
+
+</div>

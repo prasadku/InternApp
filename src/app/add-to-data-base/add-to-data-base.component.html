@@ -1,0 +1,27 @@
+<div fxLayoutAlign="center" fxFlexFill >
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary" id="s">Register Student</mat-toolbar>
+    <form #userForm="ngForm" fxLayoutAlign="strech" fxLayout="column" (ngSubmit)="addData(userForm.value)" >
+
+      <mat-form-field>
+        <input matInput placeholder="FirstName" ngModel name="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Gender" ngModel name="gender">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="datetime-local" placeholder="DOB" ngModel name="dateOfBirth">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Address" ngModel name="address">
+      </mat-form-field>
+
+
+
+      <button mat-raised-button type="submit"  >SUBMIT</button>
+      <button mat-raised-button  (click)="goBack()">Back</button>
+    </form>
+    <h2>Remember iD:{{ID}}</h2>
+  </mat-card>
+
+</div>
