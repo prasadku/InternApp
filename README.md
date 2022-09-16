@@ -2,4 +2,4 @@
 Java
 SpringBoot
 Postgresql
-Maven Web app - Mapping
+Maven Web app 
