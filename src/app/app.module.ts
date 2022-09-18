@@ -20,6 +20,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { DeleteDataComponent } from './delete-data/delete-data.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ExperimentComponent } from './experiment/experiment.component';
+import { OptionsComponent } from './options/options.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ExperimentComponent } from './experiment/experiment.component';
     UpdateDataComponent,
     DeleteDataComponent,
     ExperimentComponent,
+    OptionsComponent,
 
   ],
   imports: [
